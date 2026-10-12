@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formation A1 v2.2 | SilvWeb Installation 001</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <p class="project">SilvWeb Installation 001</p>
+    <h1>Formation A1 <span class="version">v2.2</span></h1>
+    <p class="meta">DATE, what this version explores, branch sophie/formation-studies</p>
+  </header>
+
+  <main class="study">
+
+    <!-- LEFT: media -->
+    <div class="media">
+
+      <figure class="video">
+        <video controls loop muted playsinline preload="metadata"
+               poster="screenshots/2026-10-07_formation-a1_v02_poster.jpg">
+          <source src="exports/V2-2.mp4" type="video/mp4">
+          Your browser cannot play this video.
+        </video>
+        <figcaption>Export, 16 seconds. Formation slider moves from 0.0 to 1.0.</figcaption>
+      </figure>
+
+      <figure class="build">
+        <img src="screenshots/2026-10-07_formation-a1_v02_network.png"
+             alt="TouchDesigner network for Formation A1 v02">
+        <figcaption>The build: mask into particle attraction, then render.</figcaption>
+      </figure>
+
+    </div>
+
+    <!-- RIGHT: notes -->
+    <article class="notes">
+
+      <section>
+        <h2>Question</h2>
+        <p>How do particles react when real movment is added?</p>
+      </section>
+
+      <section>
+        <h2>What was changed?</h2>
+        <ul>
+          <li>Constant motion to the figure</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>What works</h2>
+        <ul>
+          <li>Particles follow the form</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>What doesn't work</h2>
+        <ul>
+          <li>Particles focus way too much in the torso</li>
+          <li>Hands and feet seem to disappear, giving way to a blob</li>
+          <li>Not many particles are being left behind, making it look like a mobile blob, instead of particles following a form</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Next</h2>
+        <p>Keep the form</p>
+      </section>
+
+      <p class="files">
+        Project file: <code>touchdesigner/studies/formation/formation_a1_v02.toe</code>
+      </p>
+
+    </article>
+
+  </main>
+
+  <nav class="version-nav-left" aria-label="Version navigation">
+    <a href="formation-a1-v2-1.html" aria-label="previous version">◀</a>
+  </nav>
+
+    <nav class="version-nav" aria-label="Version navigation">
+    <a href="formation-a1-v2-3.html" aria-label="previous version">▶</a>
+  </nav>
+
+</body>
+</html>
