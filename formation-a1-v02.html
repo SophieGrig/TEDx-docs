@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formation A1 v02 | SilvWeb Installation 001</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <p class="project">SilvWeb Installation 001</p>
+    <h1>Formation A1 <span class="version">v02</span></h1>
+    <p class="meta">DATE, what this version explores, branch sophie/formation-studies</p>
+  </header>
+
+  <main class="study">
+
+    <!-- LEFT: media -->
+    <div class="media">
+
+      <figure class="video">
+        <video controls loop muted playsinline preload="metadata"
+               poster="screenshots/2026-10-07_formation-a1_v02_poster.jpg">
+          <source src="exports/V1-2.mp4" type="video/mp4">
+          Your browser cannot play this video.
+        </video>
+        <figcaption>Export, 16 seconds. Formation slider moves from 0.0 to 1.0.</figcaption>
+      </figure>
+
+      <figure class="build">
+        <img src="screenshots/2026-10-07_formation-a1_v02_network.png"
+             alt="TouchDesigner network for Formation A1 v02">
+        <figcaption>The build: mask into particle attraction, then render.</figcaption>
+      </figure>
+
+    </div>
+
+    <!-- RIGHT: notes -->
+    <article class="notes">
+
+      <section>
+        <h2>Question</h2>
+        <p>Can body density increase without becoming a flat masked texture?</p>
+      </section>
+
+      <section>
+        <h2>What was built?</h2>
+        <ul>
+          <li>Project takes a black/white mask</li>
+          <li>Distributes points on a plane</li>
+          <li>Magnetises the points towards the white mask</li>
+          <li>The higher the formation - the higher the pull</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>What works</h2>
+        <ul>
+          <li>Organic movement through GLSL (code snippets in TD)</li>
+          <li>Stillness reads very clearly</li>
+          <li>Formation slider from 0 - 1 works as intended</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Next</h2>
+        <p>Add edge detection</p>
+      </section>
+
+      <p class="files">
+        Project file: <code>touchdesigner/studies/formation/formation_a1_v02.toe</code>
+      </p>
+
+    </article>
+
+  </main>
+
+  <!-- Fixed button, bottom right. Points to the next version's page. -->
+  <!-- When v03 exists, add: <a class="next-btn" href="formation-a1-v03.html">Next version</a> -->
+
+</body>
+</html>
