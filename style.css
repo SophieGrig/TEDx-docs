@@ -1,0 +1,200 @@
+/* SilvWeb study page
+   Monochrome on black, to match the work itself.
+   Media on the left (video on top, build below), notes on the right. */
+
+:root {
+  --bg: #000;
+  --text: #e9e6e0;        /* warm white */
+  --text-dim: #8d8a85;
+  --line: #2a2a2a;
+  --panel: #0d0d0d;
+
+  --font: "Newsreader", Georgia, "Times New Roman", serif;
+
+  --gap: clamp(1.5rem, 3vw, 3rem);
+  --pad: clamp(1.25rem, 4vw, 3.5rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Header ---------- */
+
+.top {
+  padding: var(--pad) var(--pad) 0;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.project {
+  margin: 0 0 0.25rem;
+  font-size: 0.95rem;
+  color: var(--text-dim);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.version {
+  font-style: italic;
+  color: var(--text-dim);
+  margin-left: 0.25em;
+}
+
+.meta {
+  margin: 0.75rem 0 0;
+  font-size: 0.95rem;
+  color: var(--text-dim);
+}
+
+/* ---------- Main layout ---------- */
+
+.study {
+  display: grid;
+  grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr);
+  gap: var(--gap);
+  align-items: start;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: var(--pad);
+}
+
+/* ---------- Left: media ---------- */
+
+.media {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+figure {
+  margin: 0;
+}
+
+.video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;   /* recordings are wide */
+  background: var(--panel);
+  outline: 1px solid var(--line);
+}
+
+.build img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--panel);
+  outline: 1px solid var(--line);
+}
+
+figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--text-dim);
+}
+
+/* ---------- Right: notes ---------- */
+
+.notes {
+  /* stays in view while the left column scrolls */
+  position: sticky;
+  top: var(--pad);
+  max-height: calc(100vh - 2 * var(--pad));
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  max-width: 34rem;
+}
+
+.notes section {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.notes section:last-of-type {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--text-dim);
+}
+
+.notes p {
+  margin: 0;
+}
+
+.notes ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.notes li {
+  margin-bottom: 0.35rem;
+}
+
+.notes li::marker {
+  color: var(--text-dim);
+}
+
+.files {
+  margin-top: 2rem !important;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
+code {
+  font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  font-size: 0.85em;
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+
+/* ---------- Accessibility ---------- */
+
+:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+}
+
+/* ---------- Smaller screens: stack, media first ---------- */
+
+@media (max-width: 62rem) {
+  .study {
+    grid-template-columns: 1fr;
+  }
+
+  .notes {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    max-width: none;
+  }
+}
