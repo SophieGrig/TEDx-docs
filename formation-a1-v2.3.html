@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formation A1 v2.3 | SilvWeb Installation 001</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <p class="project">SilvWeb Installation 001</p>
+    <h1>Formation A1 <span class="version">v2.3</span></h1>
+    <p class="meta">DATE, what this version explores, branch sophie/formation-studies</p>
+  </header>
+
+  <main class="study">
+
+    <!-- LEFT: media -->
+    <div class="media">
+
+      <figure class="video">
+        <video controls loop muted playsinline preload="metadata"
+               poster="screenshots/2026-10-07_formation-a1_v02_poster.jpg">
+          <source src="exports/V2-3.mp4" type="video/mp4">
+          Your browser cannot play this video.
+        </video>
+        <figcaption>Export, 16 seconds. Formation slider moves from 0.0 to 1.0.</figcaption>
+      </figure>
+
+      <figure class="build">
+        <img src="screenshots/2026-10-07_formation-a1_v02_network.png"
+             alt="TouchDesigner network for Formation A1 v02">
+        <figcaption>The build: mask into particle attraction, then render.</figcaption>
+      </figure>
+
+    </div>
+
+    <!-- RIGHT: notes -->
+    <article class="notes">
+
+      <section>
+        <h2>Question</h2>
+        <p>Can particles follow a mobile shape?</p>
+      </section>
+
+      <section>
+        <h2>What was changed?</h2>
+        <ul>
+          <li>Added heaviness to hands and feet. so more particles are pulled to them</li>
+          <li>Reduced the pull, to make more particles be left behind</li>
+          <li>Slowed down particle movment, to contradict their new chaoticness which resulted from previous changes</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>What works</h2>
+        <ul>
+          <li>Particles seem to be following the form consistently</li>
+          <li>Hands and feet now keep their shape in movement</li>
+          <li>Particles behave more organicaly, like they actually notice and are attracted to the form, isntead of just taking its shape</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>What needs work</h2>
+        <p>Particles arent distributed to the form very evenly. Feature or bug? Remains to be seen.</p>
+      </section>
+
+      <section>
+        <h2>Next</h2>
+        <p>Awaiting feedback</p>
+      </section>
+
+      <p class="files">
+        Project file: <code>touchdesigner/studies/formation/formation_a1_v02.toe</code>
+      </p>
+
+    </article>
+
+  </main>
+
+  <nav class="version-nav-left" aria-label="Version navigation">
+    <a href="formation-a1-v2-2.html" aria-label="previous version">◀</a>
+  </nav>
+
+</body>
+</html>
