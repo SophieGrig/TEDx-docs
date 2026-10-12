@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formation A1 v2.1 | SilvWeb Installation 001</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <p class="project">SilvWeb Installation 001</p>
+    <h1>Formation A1 <span class="version">v2.1</span></h1>
+    <p class="meta">DATE, what this version explores, branch sophie/formation-studies</p>
+  </header>
+
+  <main class="study">
+
+    <!-- LEFT: media -->
+    <div class="media">
+
+      <figure class="video">
+        <video controls loop muted playsinline preload="metadata"
+               poster="screenshots/2026-10-07_formation-a1_v02_poster.jpg">
+          <source src="exports/V2-1.mp4" type="video/mp4">
+          Your browser cannot play this video.
+        </video>
+        <figcaption>Export, 16 seconds. Formation slider moves from 0.0 to 1.0.</figcaption>
+      </figure>
+
+      <figure class="build">
+        <img src="screenshots/2026-10-07_formation-a1_v02_network.png"
+             alt="TouchDesigner network for Formation A1 v2.1">
+        <figcaption>The build: mask into particle attraction, then render.</figcaption>
+      </figure>
+
+    </div>
+
+    <!-- RIGHT: notes -->
+    <article class="notes">
+
+      <section>
+        <h2>Question</h2>
+        <p>Can particles acknowledge their own movement, disintegrate the form and disperce it?</p>
+      </section>
+
+      <section>
+        <h2>What was changed?</h2>
+        <ul>
+          <li>Motion slider added</li>
+          <li>GLSL changed to account for motion</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>What works</h2>
+        <ul>
+          <li>Particles dim and 'disappear' when motion rises</li>
+          <li>Form disperses slowly into nothingness when motionrises</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Formation vs Motion</h2>
+        <p>Formation lets particles slowly build up the body, as they 'achknowledge' it.</p>
+        <p>Takes the particles apart and dims them significantly, even when no body is formed.</p>
+        <p>Further understanding needed.</p>
+      </section>
+
+      <section>
+        <h2>Next</h2>
+        <p>Add practical motion</p>
+      </section>
+      
+
+
+      <p class="files">
+        Project file: <code>touchdesigner/studies/formation/formation_a1_v02.toe</code>
+      </p>
+
+    </article>
+
+  </main>
+
+  <nav class="version-nav-left" aria-label="Version navigation">
+    <a href="formation-a1-v1-2.html" aria-label="previous version">◀</a>
+  </nav>
+
+    <nav class="version-nav" aria-label="Version navigation">
+    <a href="formation-a1-v2.2.html" aria-label="previous version">➜</a>
+  </nav>
+
+</body>
+</html>
