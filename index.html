@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formation A1 v01 | SilvWeb Installation 001</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <p class="project">SilvWeb Installation 001</p>
+    <h1>Formation A1 <span class="version">v01</span></h1>
+    <p class="meta">2026-10-07, sparse to dense formation, branch sophie/formation-studies</p>
+  </header>
+
+  <main class="study">
+
+    <!-- LEFT: media -->
+    <div class="media">
+
+      <figure class="video">
+        <video controls loop muted playsinline preload="metadata"
+               poster="screenshots/2026-10-07_formation-a1_v01_poster.jpg">
+          <source src="exports/2026-10-07_formation-a1_v01.mp4" type="video/mp4">
+          Your browser cannot play this video.
+        </video>
+        <figcaption>Export, 16 seconds. Formation slider moves from 0.0 to 1.0.</figcaption>
+      </figure>
+
+      <figure class="build">
+        <img src="screenshots/2026-10-07_formation-a1_v01_network.png"
+             alt="TouchDesigner network for Formation A1 v01">
+        <figcaption>The build: mask into particle attraction, then render.</figcaption>
+      </figure>
+
+    </div>
+
+    <!-- RIGHT: notes -->
+    <article class="notes">
+
+      <section>
+        <h2>Question</h2>
+        <p>Can body density increase without becoming a flat masked texture?</p>
+      </section>
+
+      <section>
+        <h2>What changed</h2>
+        <ul>
+          <li>Reduced interior particle count.</li>
+          <li>Added stronger edge attraction.</li>
+          <li>Lowered bloom.</li>
+          <li>Slowed formation.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>What works</h2>
+        <ul>
+          <li>Body feels more physical.</li>
+          <li>Stillness reads more clearly.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>What fails</h2>
+        <ul>
+          <li>Torso becomes too dense.</li>
+          <li>Hands disappear.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Next</h2>
+        <p>Try separate density curves for edge and interior.</p>
+      </section>
+
+      <p class="files">
+        Project file: <code>touchdesigner/studies/formation/formation_a1_v01.toe</code>
+      </p>
+
+    </article>
+
+  </main>
+
+</body>
+</html>
